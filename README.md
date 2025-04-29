@@ -55,7 +55,7 @@ Developed by: MITHUN S
 RegisterNumber: 212224240088
 */
 ```
- module exp5(din,a,b,c);
+ module exp05(din,a,b,c);
  input [0:7] din;
  output a,b,c;
  assign a=(din[4]| din[5]| din[6]| din[7]);
