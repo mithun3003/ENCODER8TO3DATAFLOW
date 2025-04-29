@@ -1,4 +1,4 @@
-### ENCODER 8TO3 DATAFLOW Modelling
+### EXP-05 ENCODER 8TO3 DATAFLOW Modelling
 
 **AIM:**
 
@@ -36,20 +36,47 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
-/* write all the steps invloved */
+1.Analyze the 8-to-3 encoder truth table and understand input-output behavior.
+
+2.Declare module with 8 inputs and 3 outputs using dataflow modeling.
+
+3.Implement output logic using continuous assign statements with conditional operators.
+
+4.Write a testbench to apply input combinations and simulate the design.
+
+5.Verify outputs with the truth table and document simulation results.
 
 **PROGRAM**
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
-*/
+Developed by: MITHUN S 
 
+RegisterNumber: 212224240088
+*/
+```
+ module exp5(din,a,b,c);
+ input [0:7] din;
+ output a,b,c;
+ assign a=(din[4]| din[5]| din[6]| din[7]);
+ assign b=(din[2]| din[3]| din[6]| din[7]);
+ assign c=(din[1]| din[3]| din[5]| din[7]);
+ endmodule
+```
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+
+![image](https://github.com/user-attachments/assets/2fc0327a-8126-4bc0-9d9c-8b251579ae85)
+
+
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
 
+![image](https://github.com/user-attachments/assets/a418b26e-d64a-4f06-a55e-fab9a93285af)
+
+
 **RESULTS**
+
+To implement Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables is verfied.
 
 
 
